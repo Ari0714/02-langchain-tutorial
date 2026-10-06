@@ -12,12 +12,13 @@ chartbot = ChatDeepSeek(
     model="deepseek-v4-flash"
 )
 
-print(chartbot.invoke("what Guangzhou tomorrow weather?"))
+chat_content = chartbot.invoke("what Guangzhou tomorrow weather?")
+print(chat_content.content.encode("utf-8").decode())
 
 
 ## same as Zhipu / Qianwen
-from langchain_community.chat_models import ChatQianWen
-from langchain_community.chat_models import ChatZhipu
+from langchain_community.chat_models import ChatTongyi
+from langchain_community.chat_models import ChatZhipuAI
 
 ## most of them compatible ChatOpenAi
 from langchain_openai import ChatOpenAI
