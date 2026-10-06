@@ -90,7 +90,7 @@ python _02_model/_01_invoke_deepseek.py
 Invoke an OpenRouter-backed model:
 
 ```bash
-python _02_model/_02_invoke_openrouter.py
+python _02_model/_03_invoke_openrouter.py
 ```
 
 ## Notes

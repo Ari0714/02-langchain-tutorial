@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2026/10/6
+# @Author  : Ari
+# @File    : _01_langchain_test.py
+# @Desc    : invoke deepseek api
+
 import os
 from langchain_deepseek import ChatDeepSeek
 from dotenv import load_dotenv
@@ -20,5 +26,3 @@ print(chat_content.content.encode("utf-8").decode())
 from langchain_community.chat_models import ChatTongyi
 from langchain_community.chat_models import ChatZhipuAI
 
-## most of them compatible ChatOpenAi
-from langchain_openai import ChatOpenAI
